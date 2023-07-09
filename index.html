@@ -6,15 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -31,31 +25,59 @@
 </head>
 
 <body>
+  <div class="top">
+    <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a">
+          <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+          <stop stop-color="#53FFEE" offset="99.94%" />
+        </linearGradient>
+      </defs>
+      <ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd"
+        opacity=".5" />
+    </svg>
+  </div>
 
-  <header>
-    <img src="logo.svg" alt="">
-  </header>
-
-  <section class="main">
-    <div class="image">
-      <img src="illustration-mockups.svg" alt="">
+  <div class="wrapper">
+    <div class="card">
+      <div class="card-top"></div>
+      <div class="profile-img">
+        <img src="image-victor.jpg" alt="Profile Picture">
+      </div>
+      <div class="info">
+        <h3>Victor Crest</h3>
+        <p>26</p>
+      </div>
+      <div class="city">
+        <p>London</p>
+      </div>
+      <hr>
+      <div class="status">
+        <p>80K <span>Followers</span></p>
+        <p>803K <span>Likes</span></p>
+        <p>1.4K <span>Photos</span></p>
+      </div>
     </div>
-    <div class="info">
-      <h3>Build The Community Your Fans Will Love</h3>
-      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-        Create connections with your users as you engage in genuine discussion. </p>
-      <a href="#">Register</a>
-    </div>
-  </section>
-
-  <footer>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-  </footer>
+  </div>
 
 
+  <div class="bottom">
+    <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a">
+          <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+          <stop stop-color="#53FFEE" offset="99.94%" />
+        </linearGradient>
+      </defs>
+      <ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488"
+        fill-rule="evenodd" opacity=".25" />
+    </svg>
+  </div>
 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ahmed Abdulsalam</a>.
+  </div>
 </body>
 
 </html>
